@@ -50,30 +50,58 @@ public class SaleLogDTO {
         this.vatAmount = vatAmountHolder;
     }
 
+    /**
+     * Getter for the product list.
+     * @return A list of products.
+     */
     public List<ProductDTO> getProductList() {
         return productList;
     }
 
+    /**
+     * Getter for the total sale amount (excluding VAT).
+     * @return The total amount of the sale (excluding VAT).
+     */
     public double getTotalExVat() {
         return totalExVat;
     }
 
+    /**
+     * Getter for the total sale amount (including VAT).
+     * @return The total amount of the sale (including VAT).
+     */
     public double getTotalInclVat() {
         return totalInclVat;
     }
 
+    /**
+     * Getter for the total VAT amount of the sale.
+     * @return The total VAT amount of the sale.
+     */
     public double getVatAmount() {
         return vatAmount;
     }
 
+    /**
+     * Getter for the amount paid by the customer.
+     * @return Amount paid by the customer.
+     */
     public double getPaidAmount() {
         return paidAmount;
     }
 
+    /**
+     * Getter for the change to be provided to the customer.
+     * @return Change to be provided to the customer.
+     */
     public double getChangeAmount() {
         return changeAmount;
     }
 
+    /**
+     * Getter for the time of the sale.
+     * @return Time of the sale.
+     */
     public LocalTime getTimeOfSale() {
         return timeOfSale;
     }
